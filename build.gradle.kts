@@ -6,13 +6,27 @@ repositories {
     mavenCentral()
 }
 
+tasks.asciidoctor {
+    sourceDir(rootDir)
+}
+
 val copyImages = tasks.register<Copy>("copyImages") {
     from("imgs")
     into("docs/imgs")
 }
 
-tasks.asciidoctor {
-    dependsOn(copyImages)
-    sourceDir(rootDir)
-    setOutputDir(rootDir.resolve("docs"))
+val copyAdoc = tasks.register<Copy>("copyAdoc") {
+    dependsOn(tasks.asciidoctor)
+    from("build/docs/asciidoc") {
+        rename {
+            if (it == "README.html") "index.html"
+            else it
+        }
+    }
+    into("docs")
+}
+
+tasks.register("publish") {
+    group = "publish"
+    dependsOn(copyImages, copyAdoc)
 }
