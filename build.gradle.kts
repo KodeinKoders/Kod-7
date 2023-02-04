@@ -6,7 +6,13 @@ repositories {
     mavenCentral()
 }
 
+val copyImages = tasks.register<Copy>("copyImages") {
+    from("imgs")
+    into("docs/imgs")
+}
+
 tasks.asciidoctor {
+    dependsOn(copyImages)
     sourceDir(rootDir)
     setOutputDir(rootDir.resolve("docs"))
 }

@@ -11,7 +11,7 @@ A card game by Salomon BRYS.
 * 51 game cards:
 ** 40 regular cards: 0 to 7 in ♠, ♥, ♣, ♦, ✿.
 ** 10 ★ cards: 0, 0, 1, 1, 2, 2, 3, 4, 5, 6.
-** 1 Interrobang card.
+** 1 Interrobang ‽ card.
 * 3 double sided Exception cards: ♠, ♥/✿, ♣/♦.
 ****
 
@@ -85,17 +85,20 @@ At the third estimation, the sum is allowed to equal 7.
 ====
 
 3. Note on a paper sheet the estimation of each player.
-+
-If a player used a Star ★ card to estimate, mark their estimation with an asterisk (*) as this modifies their scoring at the end of the round.
 
 4. Define the *first leader* and the *exception suit*:
++
+--
 ** *If at least one player has estimated a non Star ★ card:* +
    The player who estimated *the highest non Star ★ card* becomes the first leader.
-   In case of a tie, the player who has the *Interrobang* card reveals it and chooses the first leader amongst the tied players.
+   In case of a tie, ask if any player has the *Interrobang* card reveals it and chooses the first leader amongst the tied players.
    The suit of the first player's estimation card defines the exception suit.
 ** *If all players have estimated Star ★ cards*: +
-   The player who estimated *the highest card* becomes the first leader, and that player chooses the exception suit.
+   The player who estimated *the highest card* becomes the first leader, and that player decides the exception suit.
    In case of a tie, all tied players announce their chosen exception suit, then the player who has the *Interrobang* card reveals it and chooses the first leader amongst them.
+--
++
+In both cases, if no player has the Interrobang card (it is in the discard), shuffle the tied players estimation cards, chose one at random to become the first leader, then give each player their card back.
 
 5. Find the face of the exception suit in the Exception card stack, and place it visible on top of the stack.
 It reminds all players of the exception suit for the round.
@@ -134,8 +137,6 @@ The suit of the card is called *lead suit*.
 2. In clockwise order, each other player chooses a card from their hand and plays it face up on the table.
 The suit of this card *must* be of the lead suit if possible.
 If you don't have a card of the lead suit, you can play *any* other card.
-+
-IMPORTANT: *Exception:* you can always play a Star ★ card or the Interrobang card, whether you have a card of the lead suit or not.
 
 3. Define the trick winner:
 +
@@ -145,10 +146,6 @@ IMPORTANT: *Exception:* you can always play a Star ★ card or the Interrobang c
 * If there are neither card of the exception suit nor the Interrobang in the trick: the player who played *the highest lead suit card* wins the trick.
 --
 +
-IMPORTANT: The ★ cards are always *considered of the lead suit*. +
-  A ★ cards is weaker than a lead suit card of the same value.
-  (For example, if ♥ is the lead suit, the order is therefore 2♥ > 2★ > 1♥).
-+
 That player takes the cards of the trick and places them face down in front of them.
 If that wasn't the 7th trick, they become the leader of the next trick.
 +
@@ -156,6 +153,17 @@ Each player should place their won tricks next to each other so that *everybody 
 This information is public and always visible.
 
 Once all seven tricks have been played, tally up the scores.
+
+
+==== Special cards (★ & ‽)
+
+* You can always play a Star ★ card or the Interrobang ‽ card, whether you have a card of the lead suit or not.
+* Star ★ cards are always *considered of the lead suit*. +
+  A ★ card is weaker than a lead suit card of the same value.
+  (For example, if ♥ is the lead suit, the order is therefore 2♥ > 2★ > 1♥).
+* If a player opens with a special card (★ or ‽), then the next player can play any card of their choosing.
+  If that card is not special, it defines the lead suit.
+  If it is special, then the lead suit will be defined by the next player, and so on.
 
 
 === Scoring

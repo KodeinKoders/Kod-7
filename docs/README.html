@@ -463,7 +463,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>10 ★ cards: 0, 0, 1, 1, 2, 2, 3, 4, 5, 6.</p>
 </li>
 <li>
-<p>1 Interrobang card.</p>
+<p>1 Interrobang ‽ card.</p>
 </li>
 </ul>
 </div>
@@ -492,7 +492,11 @@ Will you have the necessary card, or will you need to adapt?</p>
 <ul class="sectlevel2">
 <li><a href="#distribution">Distribution</a></li>
 <li><a href="#_estimation">Estimation</a></li>
-<li><a href="#_trick_taking">Trick taking</a></li>
+<li><a href="#_trick_taking">Trick taking</a>
+<ul class="sectlevel3">
+<li><a href="#_special_cards">Special cards (★ &amp; ‽)</a></li>
+</ul>
+</li>
 <li><a href="#_scoring">Scoring</a></li>
 </ul>
 </li>
@@ -625,26 +629,30 @@ Each player must use <strong>another card</strong> for their estimation.</p>
 </li>
 <li>
 <p>Note on a paper sheet the estimation of each player.</p>
-<div class="paragraph">
-<p>If a player used a Star ★ card to estimate, mark their estimation with an asterisk (*) as this modifies their scoring at the end of the round.</p>
-</div>
 </li>
 <li>
 <p>Define the <strong>first leader</strong> and the <strong>exception suit</strong>:</p>
+<div class="openblock">
+<div class="content">
 <div class="ulist">
 <ul>
 <li>
 <p><strong>If at least one player has estimated a non Star ★ card:</strong><br>
 The player who estimated <strong>the highest non Star ★ card</strong> becomes the first leader.
-In case of a tie, the player who has the <strong>Interrobang</strong> card reveals it and chooses the first leader amongst the tied players.
+In case of a tie, ask if any player has the <strong>Interrobang</strong> card reveals it and chooses the first leader amongst the tied players.
 The suit of the first player&#8217;s estimation card defines the exception suit.</p>
 </li>
 <li>
 <p><strong>If all players have estimated Star ★ cards</strong>:<br>
-The player who estimated <strong>the highest card</strong> becomes the first leader, and that player chooses the exception suit.
+The player who estimated <strong>the highest card</strong> becomes the first leader, and that player decides the exception suit.
 In case of a tie, all tied players announce their chosen exception suit, then the player who has the <strong>Interrobang</strong> card reveals it and chooses the first leader amongst them.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>In both cases, if no player has the Interrobang card (it is in the discard), shuffle the tied players estimation cards, chose one at random to become the first leader, then give each player their card back.</p>
 </div>
 </li>
 <li>
@@ -700,18 +708,6 @@ The suit of the card is called <strong>lead suit</strong>.</p>
 <p>In clockwise order, each other player chooses a card from their hand and plays it face up on the table.
 The suit of this card <strong>must</strong> be of the lead suit if possible.
 If you don&#8217;t have a card of the lead suit, you can play <strong>any</strong> other card.</p>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<strong>Exception:</strong> you can always play a Star ★ card or the Interrobang card, whether you have a card of the lead suit or not.
-</td>
-</tr>
-</table>
-</div>
 </li>
 <li>
 <p>Define the trick winner:</p>
@@ -732,20 +728,6 @@ If you don&#8217;t have a card of the lead suit, you can play <strong>any</stron
 </div>
 </div>
 </div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-The ★ cards are always <strong>considered of the lead suit</strong>.<br>
-  A ★ cards is weaker than a lead suit card of the same value.
-  (For example, if ♥ is the lead suit, the order is therefore 2♥ &gt; 2★ &gt; 1♥).
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
 <p>That player takes the cards of the trick and places them face down in front of them.
 If that wasn&#8217;t the 7th trick, they become the leader of the next trick.</p>
@@ -759,6 +741,26 @@ This information is public and always visible.</p>
 </div>
 <div class="paragraph">
 <p>Once all seven tricks have been played, tally up the scores.</p>
+</div>
+<div class="sect3">
+<h4 id="_special_cards">Special cards (★ &amp; ‽)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>You can always play a Star ★ card or the Interrobang ‽ card, whether you have a card of the lead suit or not.</p>
+</li>
+<li>
+<p>Star ★ cards are always <strong>considered of the lead suit</strong>.<br>
+A ★ card is weaker than a lead suit card of the same value.
+(For example, if ♥ is the lead suit, the order is therefore 2♥ &gt; 2★ &gt; 1♥).</p>
+</li>
+<li>
+<p>If a player opens with a special card (★ or ‽), then the next player can play any card of their choosing.
+If that card is not special, it defines the lead suit.
+If it is special, then the lead suit will be defined by the next player, and so on.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -964,7 +966,7 @@ The Dummy never becomes first leader (its estimation is ignored for that purpose
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-10-23 18:14:08 +0200
+Last updated 2023-02-04 11:27:40 +0100
 </div>
 </div>
 <script type="text/x-mathjax-config">
